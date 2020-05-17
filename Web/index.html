@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="sk" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="styleBigScreen.css">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron|Spectral&display=swap" rel="stylesheet">
+    <title>Antivirus</title>
+  </head>
+  <body>
+    <section class="wrapper">
+      <nav>
+        <!--navigacia-->
+        <ul>
+          <li style="width:130px;"><a href="#home"><img class="fiit" src="img/fiit.png" alt="fiit"></a></li>
+          <li id="firstLi"><a href="#sucasti">Súčasti antivírusu</a></li>
+          <li><a href="#metody_detekcie">Metódy detekcie</a>
+            <ul>
+              <li><a href="#antivirusove_skenery">Antivírusové skenery</a></li>
+              <li><a href="#porovnavaci_test">Porovnávací test</a></li>
+              <li><a href="#heuristicka_analyza">Heuristicka analýza</a></li>
+              <li><a href="#rezidentny_stit">Rezidentný štít</a></li>
+            </ul>
+          </li>
+          <li style="width:110px;"><a href="#video">Video</a></li>
+          <li style="width:110px;"><a href="#autori">Náš tím</a></li>
+          <li style="width:110px;"><a href="#zdroje">Zdroje</a></li>
+        </ul>
+      </nav>
+
+      <!--nadpis + hlavny obrazok-->
+      <section class="container">
+        <img class="main_img" src="img/computerScience.jpg" alt="obrazok">
+        <h1 class="main_img_text">Antivírusy</h1>
+      </section>
+      <div id="home"><br><br></div>
+
+      <!--co je to anitivirus-->
+      <section class="content">
+        <div>
+          <article style="height:380px;">
+            <h2>Čo je to antivírus</h2>
+
+            <p class="left">Antivírus  je počítačový program, ktorého cieľom je identifikovať a eliminovať
+              počítačové vírusy. Taktiež môže zistiť a odstrániť adware, spyware a malware.
+              Prvé počítačové vírusy priniesli tlak na počítačových inžinierov, ktorý museli rýchlo vyvinúť prvé
+              počítačový antivírus. V roku 1988 vírusy upútali pozornosť médií. Niektorí z najlepších antivírusových
+              výskumníkov, začali svoju činnosť už pred rokom 1989. Rok 1988 bol teda rokom, v ktorom sa objavili
+              programy typu antivírus balík. Zatiaľ všetky antivírusové programy boli vytvorené na detekciu a
+              odstránenie určitého typu vírusu.</p>
+
+            <figure>
+              <img class="img_antivirus" style="opacity: 0.7;" src="img/antivirus.jpg" alt="antivirus">
+            </figure>
+          </article>
+          <div id="sucasti"> <br><br></div>
+        </div>
+        <hr>
+
+        <!--sucasti antivirusu-->
+        <div>
+          <article style="height: 550px;">
+            <h2>Súčasti antivírusu</h2>
+
+            <ol class="left" style="height:300px; ">
+              <li><b> SCAN - </b>  ponúka detekciu a rozoznanie eventuálnych vírusov.</li>
+              <li><b> CLEAN - </b> poskytuje programu dovolenie odstrániť detektované vírusy.</li>
+              <li><b> GUARD - </b> dovili programu, aby inštaloval špecifické štruktúry do pamäti počítača, ktoré umožnia ľahšie
+                rozpoznanie, obmedzenie penetrácie alebo blokovania pred novými typov vírusov.</li>
+              <li><b> UPDATE - </b> zaisťuje sťahovanie aktualizácií o nových vírusoch z internetu.</li>
+              <li><b> INFORMATION - </b> ponúka používateľovi prístup k dát o vírusoch, ktoré program už  pozná.</li>
+            </ol>
+
+            <!--diagram-->
+            <figure>
+              <img class="img_antivirus" src="img/diagram.png" alt="diagram">
+            </figure>
+
+          </article>
+          <div id="metody_detekcie"> <br><br></div>
+        </div>
+        <hr>
+
+        <!--metody detekcie virusov-->
+        <div>
+          <h2>Metódy detekcie vírusov</h2>
+          <p class="center">Existuje viacero metód na detekciu a ochranu pred vírusmi. Antivírusové programy využívajú
+            rôzne prístupy, prípadne ich kombinácie.</p>
+
+          <ol class="left" id="metody">
+            <li>Antivírusové skenery</li>
+            <li>Porovnávací test</li>
+            <li>Heuristická analýza</li>
+            <li>Rezidentný štít</li>
+          </ol>
+
+          <figure style="height: 400px;">
+            <img class="img_antivirus" style="width:25%;" src="img/scanning.png" alt="scanning">
+          </figure>
+          <div id="antivirusove_skenery"> <br><br></div>
+        </div>
+        <hr>
+
+        <!--antivirusove skenery-->
+        <div>
+          <h2>Antivírusové skenery</h2>
+            <p class="center">Sú najstaršou súčasťou každého antivírusového softvéru. Skenery umožňujú vykonanie procesov
+              skenovania, počas ktorého sú vyhľadávané vírusy v počítači. Vďaka špeciálnym metódam detekcie
+              v dnešnej dobe dokážu skenery rozpoznať vírusy napriek tomu, že nie sú zaznamenané vo vírusovej databáze.
+            </p>
+
+          <h3 class="content">Vírusová databáza</h2>
+            <p class="center">Vírusová databáza je súhrnom informácií, na základe ktorých dokáže anitírusový skener
+              vyhľadať v počítači známe vírusy. Vírusová databáza býva označená dátumom vydania, preto,
+              aby bola užitoćná je potrebná jej pravidelná aktualizácia.
+            </p>
+          <!--Typy skenerov-->
+          <h3 class="content">Typy skenerov</h3>
+
+          <ol class="orderedList">
+            <li><b>On-demand</b></li>
+            <ul>
+              <li>skenuje počítač až potom ako o to požiada používateľ</li>
+              <li>dokáže prehľadávať aj skomprimované súbory</li>
+              <li>najmä sa využíval v dobe OS MS-DOS</li>
+            </ul>
+
+            <li><b>On-access</b></li>
+            <ul>
+              <li>je plne automatický a neustále vyhľadáva vírusy v dátach, s ktorými príde používateľ do styku</li>
+              <li>skenuje spustené súbory/progrmy, otvárané a ukladané súbory</li>
+            </ul>
+          </ol>
+
+          <p class="center" style="margin-bottom:50px;">Antivírusový skener spraví kontrolu predtým ako dôjde k spusteniu/otvoreniu súboru. Ak obsahuje vírus,
+            skener k danému súboru zablokuje prístup. On-demand a On-access skenery vykonávajú kontrolu len na súboroch
+            alebo v systémových oblastiach, ktoré sú pre vírusy nejako zaujímavé. Zistenie, či je daný súbor zaujímavým
+            pre vírusy skenery riešia:
+          </p>
+
+          <ol class="orderedList">
+            <li><b>Prezeraním všetkých súborov (*.*)</b></li>
+            <ul>
+              <li>kde môže dôsť k falošným poplachom</li>
+              <li>je najpomalšie skenovanie</li>
+            </ul>
+
+            <li><b>Prezeraním súborov podľa dlhého zoznamu masiek (*.exe, *.doc, *.xls, *.src, ...)</b></li>
+            <ul>
+              <li>vírus sa môže vyhnúť detekcii v prípade, že infikuje súbor *.exe, ktorý má neštandartnú
+                príponu (iná prípona ako .exe)</li>
+              <li>je najrýchlejšie skenovanie</li>
+            </ul>
+
+            <li><b>Prezeraním hlavičiek všetkých súborov</b></li>
+            <ul>
+              <li>zvyčajne táto metóda je kombinovaná s druhou metódou</li>
+              <li>jej rýchlosť je niekde medzi prvou a druhou metódou</li>
+            </ul>
+          </ol>
+          <div id="porovnavaci_test"> <br><br></div>
+        </div>
+        <hr>
+
+        <!--zmena detekcie-->
+        <div>
+          <h2>Porovnávací test</h2>
+          <p class="center">Takýto spôsob skenovania počítača je založený na fakte, že keď vírus infikuje počítač, tak
+            nevyhnutne vykoná zmeny na pevnom disku. Antivírusové programy, ktoré túto detekciu využívajú si preto vopred
+            zapamätajú vlastnosti všetkých diskových oblastí, ktoré môžu byť napadnuté vírusom a pravidelne ich kontrolujú.
+            Ak zistia zmenu, tak je možné, že počítač bol napadnutý vírusom.</p>
+          <p class="center">Výhodou je, že takýmto spôdobom dokáže antivírus odhaliť väčšinu vírusov, aj takých, ktoré
+            doteraz nie sú známe. Avšak na druhej strane, nie všetky zmeny v počítači sú spôsobené vírusmi, preto táto metóda
+            nie je účinná pri aktualizácií alebo pri programoch, ktoré zapisujú údaje do spustiteľného súboru. Taktiež je
+            takéto skenovanie zbytočné ak máme v počítači nový súbor, ktorý už je infikovaný vírusom.</p>
+          <div id="heuristicka_analyza"> <br><br></div>
+        </div>
+        <hr>
+
+        <!--heuristicka analyza-->
+        <div >
+          <article>
+            <h2>Heuristická analýza</h2>
+
+            <p class="center" style="margin-bottom: 70px;">Heuristická analýza je relatívne nová metóda detekcie vírusov.
+              Cieľom heuristickej analýzy je rozbor kódu, pričom hľadá postupy pre typickú alebo podozrivú činnosť.
+              Na rozdiel od antivírusových skenerov nevyužíva databázu vírusov, ale je založená na logickej analýze
+              podozrivého kódu a porovnáva sa s kódom vírusov. Jej výhodou je je schopnosť detegovať
+              vírus nezávisle na tom, či je známy alebo nie. Nevýhodou je popri časovej náročnosti pri vyhľadávaní aj
+              citlivosť na falošné poplachy. Ak sa nájde vírus a program obshajue tzv. plnú heuristickú analýzu,
+              vtedy sa antivírusový program pokúša napodobniť činnosť počítača pri spustení programu, ktorý obsahuje
+              vírus. Touto metódou dokáže antivírusový program odhaliť úplne nový vírus. Týmto sa však môžu označiť ako
+              nakazené aj iné súbory, ktoré sú v poriadku.</p>
+          </article>
+          <div id="rezidentny_stit"> <br><br></div>
+        </div>
+        <hr>
+
+        <div>
+          <h2>Rezidentný štít</h2>
+          <p class="center">Rezidentný štít je druh antivírusu, ktorý je automaticky zavedený do operačnej pamäte
+            hneď po štarte počítča. Jeho úlohou je monitorovať činnnosť počítača a v prípade akýchkoľvek neobvyklých
+            operácií okamžite informovať používateľa. Medzi takéto neobvyklé operácie sa zaraďuje napríklad zápis
+            do systémových oblastí diskov, modifikácie spustiteľných súborov a mnohé ďalšie. Táto metóda je vhodná
+            len pre výkonné počítače, ktoré majú dostatočnú operačnú pamäť, takže rezidentný antivírus systém takmer
+            vôbec nezaťažuje.</p>
+          <div id="video"> <br><br></div>
+        </div>
+        <hr>
+
+        <!--Video-->
+        <div  style="margin: 0 auto 70px auto; width: 800px;">
+          <h2>Antivírus a jeho fungovanie</h2>
+          <iframe width="800" height="550"
+            src="https://www.youtube.com/embed/oUrqku-XI3Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+          </iframe>
+          <div id="autori"> <br><br></div>
+        </div>
+        <hr>
+
+        <!--autori-->
+        <section  style="height: 440px;">
+          <h2>Náš tím</h2>
+          <article class="autori" id="firstAutor">
+            <h3 class="autori">Nguyen Viet Quan</h3>
+            <h4>Strihač videa</h4>
+            <p class="autori">xnguyenviet@is.stuba.sk</p>
+            <img class="autori" src="img/David.jpg" alt="david">
+          </article>
+
+          <article class="autori">
+            <h3 class="autori">Novák Martin</h3>
+            <h4>Šéf tímu, Server admin</h4>
+            <p class="autori">xnovakm4@is.stuba.sk</p>
+            <img class="autori" src="img/Mato.jpg" alt="mato">
+          </article>
+
+          <article class="autori">
+            <h3 class="autori">Novak Stefan Otto</h3>
+            <h4>Hľadač obsahu</h4>
+            <p class="autori">xnovaks1@is.stuba.sk</p>
+            <img class="autori" src="img/Otto.jpg" alt="oto">
+          </article>
+
+          <article class="autori">
+            <h3 class="autori">Novákiová Veronika</h3>
+            <h4>Hľadač obsahu</h4>
+            <p class="autori">xnovakiova@is.stuba.sk</p>
+            <img class="autori" src="img/Verca.jpg" alt="verca">
+          </article>
+
+          <article class="autori">
+            <h3 class="autori">Okasová Kristína</h3>
+            <h4>Web developer</h4>
+            <p class="autori">xokasova@is.stuba.sk</p>
+            <img class="autori" src="img/Kika.jpg" alt="kika">
+          </article>
+        </section>
+        <hr>
+
+        <!--zdroje-->
+        <section id="zdroje">
+          <h2>Zdroje</h2>
+          <ol class="orderedList" style="padding-bottom: 50px;">
+            <li>https://www.lurotech.sk/clanky/clanok_antivirus.php</li>
+            <li>https://beasthackerz.ru/sk/fleshka/v-chem-zaklyuchaetsya-evristicheskii-metod-antivirusnoi-proverki.html</li>
+            <li>https://antivirusss.estranky.sk/clanky/Rozdelenie.html</li>
+            <li>https://www.forbes.com/sites/insights-microsoftai/2018/09/17/intelligent-security-how-ai-is-revolutionizing-identity-verification-fraud-detection-and-risk-assessment/</li>
+            <li>http://elearning.masterprof.ro/lectiile/informatica/lectie_06/structur_i_instalare_antivirus.html</li>
+            <li>http://evyucba.ku.sk/virusy/pcvirusy.html</li>
+            <li>https://peetko.estranky.cz/clanky/heuristicka-analyza.html</li>
+            <li>http://fim.uhk.cz/wikiinf/web/index.php/home/13-informani-bezpenost/263-heuristicka-analyza</li>
+            <li>https://encyklopediapoznania.sk/clanok/2685/rizika-antivirusovy-softver-antivirus-a-jeho-typy-antivirusove-techniky</li>
+          </ol>
+        </section>
+      </section>
+
+      <footer><p>Antivírusy, Projekt vznikol v rámci predmetu ZPS v ročníku 2019/2020</p></footer>
+    </section>
+  </body>
+</html>
