@@ -110,9 +110,14 @@
         <!--antivirusove skenery-->
         <div>
           <h2>Antivírusové skenery</h2>
-            <p class="center">Sú najstaršou súčasťou každého antivírusového softvéru. Skenery umožňujú vykonanie procesov
-              skenovania, počas ktorého sú vyhľadávané vírusy v počítači. Vďaka špeciálnym metódam detekcie
-              v dnešnej dobe dokážu skenery rozpoznať vírusy napriek tomu, že nie sú zaznamenané vo vírusovej databáze.
+            <p class="center">Sú najstaršou súčasťou každého antivírusového softvéru. Skenery umožňujú vykonanie
+              procesov skenovania, počas ktorej sú vyhľadávané vírusy v počítači. Metóda skenovania je založená na
+              porovnávaní reťazcov kódov známych vírusov, zapísaných vo vírusovej databáze, s reťazcami kódu skenovaných
+              súborov. V prípade nájdenia vírusu, antivírusový program ohlási jeho nájdenie a označí ho podľa názvu
+              daného kódu vírusu v databáze. Tento spôsob ochrany je veľmi spoľahlivý, avšak je závislý od aktuálnosti
+              vírusovej databázy. Najväčšou výhodou tejto metódy je jej rýchlosť a preto sa používa pre pravidelné
+              kontrolovanie pevného disku. Vďaka špeciálnym metódam detekcie v dnešnej dobe dokážu skenery rozpoznať
+              vírusy napriek tomu, že nie sú zaznamenané vo vírusovej databáze.
             </p>
 
           <h3 class="content">Vírusová databáza</h2>
@@ -137,13 +142,6 @@
               <li>skenuje spustené súbory/programy, otvárané a ukladané súbory</li>
             </ul>
           </ol>
-
-          <h3 class="content">Metóda skenovania</h3>
-          <p class="center">ntivírusové skenery využívajú metódu skenovania, ktorá je založená na porovnavaní reťazcov
-            kódov známych vírusov, zapísaných vo vírusovej databáze, s reťazcami kódu skenovaných súborov. V prípade
-            nájdenia vírusu, antivírusový program ohlási jeho nájdenie a označí ho podľa názvu daného kódu vírusu v
-            databáze. Tento spôsob ochrany je veľmi spoľahlivý, avšak je závislý od aktuálnosti vírusovej databázy.
-            Najväčšou výhodou tejto metódy je rýchlosť a preto sa používa pre pravidelné kontrolovanie pevného disku.</p>
 
           <h3 class="content">Kontrola súborov</h3>
           <p class="center" style="margin-bottom:50px;">Antivírusový skener spraví kontrolu predtým ako dôjde k spusteniu/otvoreniu súboru. Ak obsahuje vírus,
@@ -224,15 +222,19 @@
           <article>
             <h2>Heuristická analýza</h2>
 
-            <p class="center" style="margin-bottom: 70px;">Heuristická analýza je relatívne nová metóda detekcie vírusov.
-              Cieľom heuristickej analýzy je rozbor kódu, pričom hľadá postupy pre typickú alebo podozrivú činnosť.
-              Na rozdiel od antivírusových skenerov nevyužíva databázu vírusov, ale je založená na logickej analýze
-              podozrivého kódu a porovnáva sa s kódom vírusov. Jej výhodou je je schopnosť detegovať
-              vírus nezávisle na tom, či je známy alebo nie. Nevýhodou je popri časovej náročnosti pri vyhľadávaní aj
-              citlivosť na falošné poplachy. Ak sa nájde vírus a program obshajue tzv. plnú heuristickú analýzu,
-              vtedy sa antivírusový program pokúša napodobniť činnosť počítača pri spustení programu, ktorý obsahuje
-              vírus. Touto metódou dokáže antivírusový program odhaliť úplne nový vírus. Týmto sa však môžu označiť ako
-              nakazené aj iné súbory, ktoré sú v poriadku.</p>
+            <p class="center" style="margin-bottom: 70px;">Heuristická analýza je v podstate rozbor kódu, pričom
+              hľadáme postupy pre typickú alebo podozrivú činnosť. Týmto spôsobom dokážeme odhaliť typické vírusy,
+              ale aj doposiaľ neznáme vírusy. Antivírové programy využívajú dva postupy: antivírový test a
+              heuristickú analýzu. Antivírový test využíva databázu známych počítačových vírusov. Ak nebol nájdený
+              žiaden vírus, začne sa logická analýza podozrivého kódu a porovnáva sa s kódom vírusov.
+              Jej výhodou je schopnosť detegovať vírus nezávisle na tom, či je známy alebo nie je. Nevýhodou je popri
+              väčšej časovej náročnosti pri vyhľadávaní aj citlivosť na falošné poplachy. Ak sa nájde vírus a
+              program obsahuje tzv. plnú heuristickú analýzu, vtedy sa antivírový program pokúša napodobniť činnosť
+              počítača pri spustení programu obsahujúceho vírus. Väčšina antivírových programov, ktoré využívajú
+              heuristickú analýzu, to robia tak, že spustia program s vírusom vo virtuálnom stroji, čo ukáže aj
+              následky, keby nebol vírus zlikvidovaný, a potom sa vykonáva porovnávanie kódov vírusu a súboru.
+              Touto metódou dokáže antivírový program odhaliť úplne nový vírus. Týmto avšak môže označiť ako
+              nakazené aj iné súbory, ktoré sú v poriadku. Takto vzniká ďalší falošný poplach.</p>
           </article>
           <div id="sandbox"> <br><br></div>
         </div>
