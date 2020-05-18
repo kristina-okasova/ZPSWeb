@@ -125,7 +125,7 @@ h3.content {
   text-align: center;
   text-transform: uppercase;
   font-family: 'Spectral', serif;
-  font-size: 25px;
+  font-size: 22px;
 }
 /*bezne nadpisy urovne h4*/
 h4 {
@@ -137,7 +137,7 @@ h4 {
 }
 /*vycentrovane paragrafy*/
 p.center {
-  width: 80%;
+  width: 75%;
   margin: auto;
   text-align: center;
   line-height: 30px;
@@ -169,6 +169,11 @@ p.center {
   float: right;
   margin-top: 60px;
   margin-right: 220px;
+}
+/*obrazok k sandboxu*/
+.img_sandbox {
+  margin-left: 490px;
+  width: 40%;
 }
 /*ocislovany zoznam*/
 .orderedList {

@@ -17,9 +17,9 @@
           <li><a href="#metody_detekcie">Metódy detekcie</a>
             <ul>
               <li><a href="#antivirusove_skenery">Antivírusové skenery</a></li>
-              <li><a href="#porovnavaci_test">Porovnávací test</a></li>
+              <li><a href="#detekcia_spravania">Detekcia správania</a></li>
               <li><a href="#heuristicka_analyza">Heuristicka analýza</a></li>
-              <li><a href="#rezidentny_stit">Rezidentný štít</a></li>
+              <li><a href="#sandbox">Sandbox</a></li>
             </ul>
           </li>
           <li style="width:110px;"><a href="#video">Video</a></li>
@@ -43,10 +43,10 @@
 
             <p class="left">Antivírus  je počítačový program, ktorého cieľom je identifikovať a eliminovať
               počítačové vírusy. Taktiež môže zistiť a odstrániť adware, spyware a malware.
-              Prvé počítačové vírusy priniesli tlak na počítačových inžinierov, ktorý museli rýchlo vyvinúť prvé
-              počítačový antivírus. V roku 1988 vírusy upútali pozornosť médií. Niektorí z najlepších antivírusových
+              Prvé počítačové vírusy priniesli tlak na počítačových inžinierov, ktorí museli rýchlo vyvinúť prvé
+              počítačové antivírusy. V roku 1988 vírusy upútali pozornosť médií. Niektorí z najlepších antivírusových
               výskumníkov, začali svoju činnosť už pred rokom 1989. Rok 1988 bol teda rokom, v ktorom sa objavili
-              programy typu antivírus balík. Zatiaľ všetky antivírusové programy boli vytvorené na detekciu a
+              programy typu antivírusových balíkov. Zatiaľ všetky antivírusové programy boli vytvorené na detekciu a
               odstránenie určitého typu vírusu.</p>
 
             <figure>
@@ -59,21 +59,27 @@
 
         <!--sucasti antivirusu-->
         <div>
-          <article style="height: 550px;">
+          <article style="height: 700px;">
             <h2>Súčasti antivírusu</h2>
 
             <ol class="left" style="height:300px; ">
-              <li><b> SCAN - </b>  ponúka detekciu a rozoznanie eventuálnych vírusov.</li>
-              <li><b> CLEAN - </b> poskytuje programu dovolenie odstrániť detektované vírusy.</li>
-              <li><b> GUARD - </b> dovili programu, aby inštaloval špecifické štruktúry do pamäti počítača, ktoré umožnia ľahšie
-                rozpoznanie, obmedzenie penetrácie alebo blokovania pred novými typov vírusov.</li>
-              <li><b> UPDATE - </b> zaisťuje sťahovanie aktualizácií o nových vírusoch z internetu.</li>
-              <li><b> INFORMATION - </b> ponúka používateľovi prístup k dát o vírusoch, ktoré program už  pozná.</li>
+              <li><b> SCAN - </b>  ponúka detekciu a rozpoznanie eventuálnych vírusov. Existuje viacero možností, ako rozpoznať antivírus.
+                Medzi tie najčastejšie používané zaraďujeme vyhľadávanie vírusov pomocou databázy, heuristické vyhľadávanie, kontrolný
+                súčet alebo aktívne monitorovanie programov. </li>
+              <li><b> CLEAN - </b> poskytuje programu dovolenie odstrániť detektované vírusy. Túto operáciu možno vykonať viacerými
+                metódami, avšak aktuálne najpoužívanejšie sú dve z nich. Tou prvou je opravenie vírusového súboru, čo je možné odstránením
+                podpisu vírusu, izolovaním alebo odstránením napadnutého súboru. Druhou metódou je heuristická analýza, ktorá je výhodná
+                najmä pri identifikovaní vírusov, ktoré ešte nie sú známe.</li>
+              <li><b> GUARD - </b> umožňuje antivírusovému programu, aby nainštaloval špecifické štruktúry do pamäti počítača, ktoré umožnia ľahšie
+                rozpoznanie, obmedzenie penetrácie alebo blokovania pred novými typmi vírusov.</li>
+              <li><b> UPDATE - </b> zaisťuje sťahovanie aktualizácií o nových typoch vírusov z internetu. </li>
+              <li><b> INFORMATION - </b> ponúka používateľovi prístup k dátam o vírusoch, ktoré program už  pozná. Takéto dáta obsahujú typ vírusu,
+                jeho vlastnosti, spôsob pôsobenia a možnosti eliminácie.</li>
             </ol>
 
             <!--diagram-->
             <figure>
-              <img class="img_antivirus" src="img/diagram.png" alt="diagram">
+              <img class="img_antivirus" style="margin-top: 100px;" src="img/diagram.png" alt="diagram">
             </figure>
 
           </article>
@@ -89,9 +95,9 @@
 
           <ol class="left" id="metody">
             <li>Antivírusové skenery</li>
-            <li>Porovnávací test</li>
+            <li>Detekcia založená na správaní</li>
             <li>Heuristická analýza</li>
-            <li>Rezidentný štít</li>
+            <li>Sandbox technológia</li>
           </ol>
 
           <figure style="height: 400px;">
@@ -111,7 +117,7 @@
 
           <h3 class="content">Vírusová databáza</h2>
             <p class="center">Vírusová databáza je súhrnom informácií, na základe ktorých dokáže anitírusový skener
-              vyhľadať v počítači známe vírusy. Vírusová databáza býva označená dátumom vydania, preto,
+              vyhľadať v počítači známe vírusy. Vírusová databáza býva označená dátumom vydania, a preto,
               aby bola užitoćná je potrebná jej pravidelná aktualizácia.
             </p>
           <!--Typy skenerov-->
@@ -128,7 +134,7 @@
             <li><b>On-access</b></li>
             <ul>
               <li>je plne automatický a neustále vyhľadáva vírusy v dátach, s ktorými príde používateľ do styku</li>
-              <li>skenuje spustené súbory/progrmy, otvárané a ukladané súbory</li>
+              <li>skenuje spustené súbory/programy, otvárané a ukladané súbory</li>
             </ul>
           </ol>
 
@@ -158,21 +164,49 @@
               <li>jej rýchlosť je niekde medzi prvou a druhou metódou</li>
             </ul>
           </ol>
-          <div id="porovnavaci_test"> <br><br></div>
+          <div id="detekcia_spravania"> <br><br></div>
         </div>
         <hr>
 
-        <!--zmena detekcie-->
+        <!--detekcia zalozena na spravani-->
         <div>
-          <h2>Porovnávací test</h2>
-          <p class="center">Takýto spôsob skenovania počítača je založený na fakte, že keď vírus infikuje počítač, tak
-            nevyhnutne vykoná zmeny na pevnom disku. Antivírusové programy, ktoré túto detekciu využívajú si preto vopred
-            zapamätajú vlastnosti všetkých diskových oblastí, ktoré môžu byť napadnuté vírusom a pravidelne ich kontrolujú.
-            Ak zistia zmenu, tak je možné, že počítač bol napadnutý vírusom.</p>
-          <p class="center">Výhodou je, že takýmto spôdobom dokáže antivírus odhaliť väčšinu vírusov, aj takých, ktoré
-            doteraz nie sú známe. Avšak na druhej strane, nie všetky zmeny v počítači sú spôsobené vírusmi, preto táto metóda
-            nie je účinná pri aktualizácií alebo pri programoch, ktoré zapisujú údaje do spustiteľného súboru. Taktiež je
-            takéto skenovanie zbytočné ak máme v počítači nový súbor, ktorý už je infikovaný vírusom.</p>
+          <h2>Detekcia založená na správaní</h2>
+          <p class="center">Vzhľadom na to, že vírusové databázy neobsahujú záznamy o každom malwari, tak sa začal presadzovať iný prístup
+            rozpoznávania škodlivých kódov. Antivírusové programy, ktoré majú detekciu vírusov založenú na pozorovaní ich správania sú
+            schopné odhaliť oveľa väčšie množstvo vírusov za výrazne kratší čas. Jednotlivé hrozby posudzujú na základe toho, aké správanie
+            sa od daného programu, alebo časti kódu očakáva. Toto jeho očakávané správanie analyzujú ešte predtým ako je program spustený v
+            počítači. Takýmto spôsobom dokážu odhaliť podozrivé aktivity a označiť kód za škodlivý, aj keď predtým ešte nebol známy. Existuje
+            viacero prístupov k tomu, čo možno označiť za podozrivé správanie. Medzi tie najbežnejšie príklady patrí odhalenie sandboxu,
+            znefunkčnenie bezpečnostných ovládacích prvkov alebo inštalovanie rootkitov.</p>
+
+          <h3 class="content">Statická a dynamická analýza</h3>
+          <p class="center">Analyzovanie správania môže byť dynamické aj statické. Ak sa potenciálne škodlivé správanie analyzuje priamo pri
+            vykonávaní kódu tak ide o dynamickú analýzu. Na druhej strane, ak sa potenciálna hrozba hľadá v rámci kódu a štruktúry objektu
+            pred jeho samotným spustením, tak ide o statickú analýzu. Tú možno vykonať v reálnom čase, čo je veľkou výhodou pri detekcii
+            vírusov, avšak dynamická analýza potrebuje čas na vykonanie všetkých operácií, ktorými daný kód disponuje.</p>
+
+          <h3 class="content">Spôsob detekcie</h3>
+          <p class="center">Pozorovanie správania je založené na zaznamenaní a vyhodnotení každého riadku kódu, ktorý je potenciálne považovaný
+            za škodlivý kód. Analyzujú sa všetky požiadavky na prístup k súborom, všetky procesy a spojenia nadviazané takýmto programom. V praxi
+            to znamená, že každá inštrukcia kódu je vykonaná na úrovni operačného systému alebo iného zahrnutého programu. Takýmto spôsobom
+            si antivírusový program zapamätá všetky podozrivé aktivity a následne keď sa na ne pozrie ako na celok, tak vie určiť, či ide
+            o škodlivý kód. Vzhľadom na to, že celá analýza kódu sa vykonáva ešte pred samotným spustením programu, tak takéto typy antivírusov
+            dokážu zabrániť infikovaniu zariadenia ešte pred samotným spustením škodlivého kódu.</p>
+
+          <figure>
+            <img class="img_sandbox" src="img/detekciaSpravania.png" alt="sandbox">
+          </figure>
+
+          <h3 class="content">Výhody</h3>
+          <p class="center">Výhodou analýzy správania oproti vírusovej databáze je odhalenie škodlivých kódov v reálnom čase ako ja
+            väčší rozsah hrozby, ktorá môže byť takýmto spôsobom eliminovaná. Preto v súčastnosti je detekcia správania viac využívaná avšak
+            ani táto metóda nie je absolútne účinná. Preto je vhodné ak antivírusové programy kombinujú prístup detekcie správania s porovnávaním
+            s databázou, aby sa tým dosiahla čo najvyššia účinnosť daného softvéru.</p>
+
+          <h3 class="content">Využitie</h3>
+          <p class="center">Tento spôsob detekcie sa využíva najmä pri ochrane pred novými ešte neodhalenými druhmi malwaru, pri identifikácií
+            konkrétnej inštancie malwaru, ktorý nebol hromadne použitý a taktiež pri získavaní informácií o tom, čo daný kód po spustení spraví
+            a či ho možno považovať za hrozbu.</p>
           <div id="heuristicka_analyza"> <br><br></div>
         </div>
         <hr>
@@ -192,18 +226,49 @@
               vírus. Touto metódou dokáže antivírusový program odhaliť úplne nový vírus. Týmto sa však môžu označiť ako
               nakazené aj iné súbory, ktoré sú v poriadku.</p>
           </article>
-          <div id="rezidentny_stit"> <br><br></div>
+          <div id="sandbox"> <br><br></div>
         </div>
         <hr>
 
+        <!--Sandbox technologia-->
         <div>
-          <h2>Rezidentný štít</h2>
-          <p class="center">Rezidentný štít je druh antivírusu, ktorý je automaticky zavedený do operačnej pamäte
-            hneď po štarte počítča. Jeho úlohou je monitorovať činnnosť počítača a v prípade akýchkoľvek neobvyklých
-            operácií okamžite informovať používateľa. Medzi takéto neobvyklé operácie sa zaraďuje napríklad zápis
-            do systémových oblastí diskov, modifikácie spustiteľných súborov a mnohé ďalšie. Táto metóda je vhodná
-            len pre výkonné počítače, ktoré majú dostatočnú operačnú pamäť, takže rezidentný antivírus systém takmer
-            vôbec nezaťažuje.</p>
+          <h2>Sandbox technológia</h2>
+          <p class="center">Sandbox technológia bola uvedená na trh z dôvodu neustále sa vyvíjajúcich a tažšie
+            rozpoznateľných malwarov. Táto technológia predstavuje ďalšiu vrstvu ochrany pred škodlivými kódmi pridanú ku
+            antivírusovým nástrojom pre zabezpečenie vyššej úrovne ochrany.</p>
+
+          <h3 class="content">Spôsob detekcie</h3>
+          <p class="center">Sandbox technológia pracuje na podobnom princípe ako detekcia založená na správaní. Avšak na
+            rozdiel od analýzy kódu po riadkoch, Sandbox poskytuje malwaru priestor na "hranie", pričom analyzuje jeho správanie.
+            Dovolí kódu vykonať všetky operácie až pokým nedôjde do štádia vykonávania shell kódu, čím zabezpečí odhalenie čo najväčšieho
+            množstva potenciálnych hrozieb. Takýmto prístupom dokáže odhaliť zámer kódu aj keď nie je súčasťou databázy a na prvý pohľad
+            sa jeho správanie nejaví ako škodlivé.</p>
+
+          <figure>
+            <img class="img_sandbox" src="img/sandbox.png" alt="sandbox">
+          </figure>
+
+          <h3 class="content">Spôsoby prelomenia Sandboxu</h3>
+          <p class="center">Vzhľadom na to, že Sandboxy sú v súčastnosti už rozšírené a dobre známe, tak existujú aj spôsoby akým sa dajú
+            obísť. Tieto spôsoby majú spoločnú jednu vlastnosť a to, že sa snažia zabrániť Sandboxu, aby vykonal konkrétnu škodlivú časť
+            daného kódu a tým pádom odhalil daný malware. Preto dnes existujú malwary, ktoré dokážu analyzovať Sandbox, v ktorom sa nachádzajú,
+            pochopiť správanie systému a následne ho obísť. Potom škodlivú časť svojho kódu vykoná až keď si je istý, že sa nachádza mimo
+            Sandboxu</p>
+
+          <h3 class="content">Prostredie Sandboxu</h3>
+          <p class="center">Sandboxy sú virtuálne prostredia, ktoré sú navrhnuté tak, aby sa čo najviac podobali reálnemu používateľskému prostrediu.
+            Avšak napriek tomu existujú rozdiely, pomocou ktorých vie malware identifikovať, či sa nachádza v prostredí Sandboxu alebo nie. Napríklad
+            malware sa pokúsi zistiť, či beží vo virtuálnom prostredí alebo nie, prípadne hľadá identifikačné vlastnosti Sandboxu. Môže ísť o rôzne
+            konfiguračné súbory, spsutiteľné súbory, procesy, klúče registra, adaptéry sieťových zariadení a ďalšie. Akonáhle malware nejaký znak
+            virtuálneho prostredia spozoruje, tak zamedzí vykonaniu škodlivej časti kódu.</p>
+
+          <h3 class="content">Zneužitie limitácií Sandboxu</h3>
+          <p class="center">Aj keď technológia Sandboxu sa môže zdať sofistikovaná, tak má aj svoje limity, ktoré môžu byť útočníkmi zneužité. Napríklad môže ísť o:</p>
+          <ol class="orderedList" style="margin-top: 40px;">
+            <li>Prekročenie veľkosti súboru, ktorý dokáže Sandbox spracovať</li>
+            <li>Použitie súboru s príponou, ktorú Sandbox nevie detekovať</li>
+            <li>Malware má zašifrovaný alebo pozmenený svoj kód a Sandbox ho nevie analyzovať</li>
+          </ol>
           <div id="video"> <br><br></div>
         </div>
         <hr>
@@ -271,6 +336,8 @@
             <li>https://peetko.estranky.cz/clanky/heuristicka-analyza.html</li>
             <li>http://fim.uhk.cz/wikiinf/web/index.php/home/13-informani-bezpenost/263-heuristicka-analyza</li>
             <li>https://encyklopediapoznania.sk/clanok/2685/rizika-antivirusovy-softver-antivirus-a-jeho-typy-antivirusove-techniky</li>
+            <li>https://www.infosecurity-magazine.com/opinions/malware-detection-signatures/</li>
+            <li>https://perception-point.io/resources/education/death-to-sandbox/</li>
           </ol>
         </section>
       </section>
